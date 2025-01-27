@@ -12,9 +12,27 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=update" />
 </head>
 <body>
-    <main class="container row m-5 ">
+    <main class="container row flex-row-reverse m-5 ">
         
-        <section class="col-8">
+        <section class="col-sm-12 col-md-6 ">
+            <div>
+                <button class="btnAdd"> + Add taches</button>
+            </div>
+            <div class="crud ">
+                <div class="card m-5 ">
+                    <div>
+                        <h4 class="titre d-block">Titre</h4>
+                        <p class="description d-block">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div >
+                        <button class="btn btn-primary">modifier</button>
+                        <button class="btn btn-danger">supprimer</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="col-sm-12 col-md-6">
             <div class="buton">
                 <button type="button" class="btn btn-outline-primary">Pomodoro</button>
                 <button type="button" class="btn btn-outline-secondary">Short break</button>
@@ -22,28 +40,11 @@
 
             </div>
             <div>
-                <h1>00:00</h1>
+                <h1 class="crono m-5">00:00</h1>
                 <input class="btn btn-primary" type="button" value="Start">
+                <input class="btn btn-danger" type="button" value="Stop">
 
             </div>
-        </section>
-        <section class="col-4">
-            <div>
-                <button>Add taches</button>
-            </div>
-            <div class="card">
-                <div>
-                <h5>Titre</h5>
-                <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-trash"></i>
-                <span class="material-symbols-outlined">
-                    update
-                    </span>
-            </div>
-            </div>
-            
         </section>
     </main>
     <script src="app.js"></script>
