@@ -14,10 +14,38 @@
 <body>
     <main class="container row flex-row-reverse m-5 ">
         
-        <section class="col-sm-12 col-md-6 ">
+        <section class="col-sm-12 col-md-6  text-center ">
             <div>
-                <button class="btnAdd"> + Add taches</button>
+                <button class="btnAdd text-center " onclick="AddTache()"> + Add taches</button>
             </div>
+            <form  class="row g-3 form-container d-none">
+                <!-- Titre -->
+                <div class="col-12">
+                  <label for="taskTitle" class="form-label">Titre :</label>
+                  <input type="text" id="taskTitle" class="form-control" placeholder="Taper un titre" required>
+                </div>
+          
+                <!-- Description -->
+                <div class="col-12">
+                  <label for="taskDescription" class="form-label">Description :</label>
+                  <input type="text" id="taskDescription" class="form-control" placeholder="Taper une description">
+                </div>
+          
+                <!-- Priorité -->
+                <div class="col-12">
+                  <label for="taskPriority" class="form-label">Priorité :</label>
+                  <select id="taskPriority" class="form-select">
+                    <option value="basse">Basse</option>
+                    <option value="moyenne">Moyenne</option>
+                    <option value="haute">Haute</option>
+                  </select>
+                </div>
+          
+                <!-- Bouton Terminer -->
+                <div class="col-12 text-center">
+                  <input type="button" class="btn btn-primary" value="Terminé" onclick="terminé()">
+                </div>
+              </form>
             <div class="crud ">
                 <div class="card m-5 ">
                     <div>
@@ -32,18 +60,17 @@
                 </div>
             </div>
         </section>
-        <section class="col-sm-12 col-md-6">
+        <section class="col-sm-12 col-md-6  text-center">
             <div class="buton">
                 <button type="button" class="btn btn-outline-primary">Pomodoro</button>
                 <button type="button" class="btn btn-outline-secondary">Short break</button>
                 <button type="button" class="btn btn-outline-success">long break</button>
 
             </div>
-            <div>
-                <h1 class="crono m-5">00:00</h1>
+            <div class="">
+                <h1 class="crono m-5 ">00:00</h1>
                 <input class="btn btn-primary" type="button" value="Start">
                 <input class="btn btn-danger" type="button" value="Stop">
-
             </div>
         </section>
     </main>
