@@ -39,8 +39,7 @@ function AfficheTache() {
   
 
     if (data) {
-        // list.push(data);
-        // console.log("list"+list);
+        
         data.forEach((dt, index) => {
             const task =innerHTML = `
             <div class="bg-white row d-flex justify-content-between align-items-center">
