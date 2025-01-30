@@ -16,12 +16,12 @@
         
         <section class="col-sm-12 col-md-6  text-center ">
             <div>
-                <button class="btnAdd text-center " onclick="AddTache()"> + Add taches</button>
+                <button class="btnAdd text-center "  id="ajouter"> + Add taches</button>
             </div>
             <form  class="row g-3 form-container d-none">
                 <!-- Titre -->
                 <div class="col-12">
-                  <label for="taskTitle" class="form-label">Titre :</label>
+                  <label for="taskTitle" class="form-label" id="titre">Titre :</label>
                   <input type="text" id="taskTitle" class="form-control" placeholder="Taper un titre" required>
                 </div>
           
@@ -35,6 +35,7 @@
                 <div class="col-12">
                   <label for="taskPriority" class="form-label">Priorité :</label>
                   <select id="taskPriority" class="form-select">
+                    <option value="">Sélectionnez une priorité</option>
                     <option value="basse">Basse</option>
                     <option value="moyenne">Moyenne</option>
                     <option value="haute">Haute</option>
@@ -43,20 +44,13 @@
           
                 <!-- Bouton Terminer -->
                 <div class="col-12 text-center">
-                  <input type="button" class="btn btn-primary" value="Terminé" onclick="terminé()">
+                  <input type="button" class="btn btn-primary" id="terminé" value="Terminé" >
                 </div>
               </form>
             <div class="crud ">
+                <div class="card m-5" id="taskContainer"></div>
                 <div class="card m-5 ">
-                    <div>
-                        <h4 class="titre d-block">Titre</h4>
-                        <p class="description d-block">Lorem ipsum dolor sit amet.</p>
-                    </div>
-                    <div >
-                        <button class="btn btn-primary">modifier</button>
-                        <button class="btn btn-danger">supprimer</button>
-                    </div>
-
+                   
                 </div>
             </div>
         </section>

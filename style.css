@@ -15,7 +15,9 @@ main{
     
 }
 body {
-    background-color: #f8f9fa;
+    background-image: url(img/pier-lake-hallstatt-austria.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
   .form-container {
     max-width: 600px;
@@ -24,5 +26,20 @@ body {
     border-radius: 10px;
     background: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  @media screen and (max-width:992px) {
+    body{
+        background-size: 1788px;
+    }
+
+    
+  }
+  @media screen and (max-width:600px) {
+    body{
+        background-size: 1119px;
+        width: 100%;
+        overflow-x: hidden;
+
+    }
   }
     
