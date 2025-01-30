@@ -18,7 +18,7 @@
             <div>
                 <button class="btnAdd text-center "  id="ajouter"> + Add taches</button>
             </div>
-            <form  class="row g-3 form-container d-none">
+            <form  class="row g-3 form-container d-none" id="form">
                 <!-- Titre -->
                 <div class="col-12">
                   <label for="taskTitle" class="form-label" id="titre">Titre :</label>
@@ -47,12 +47,11 @@
                   <input type="button" class="btn btn-primary" id="terminé" value="Terminé" >
                 </div>
               </form>
-            <div class="crud ">
-                <div class="card m-5" id="taskContainer"></div>
-                <div class="card m-5 ">
-                   
-                </div>
-            </div>
+              
+              <div id="crud" >
+              </div>
+               
+          
         </section>
         <section class="col-sm-12 col-md-6  text-center">
             <div class="buton">
