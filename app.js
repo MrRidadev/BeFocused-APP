@@ -53,7 +53,12 @@ function AfficheTache() {
     }
 }
 
-
+function deleteTask(index) {
+    const data = JSON.parse(localStorage.getItem("notes"));
+    data.splice(index, 1); // Supprimer la tâche
+    localStorage.setItem("notes", JSON.stringify(data));
+    AfficheTache(); // Réafficher la liste après suppression
+}
 
 function editTask(index) {
     const data = JSON.parse(localStorage.getItem("notes"));
